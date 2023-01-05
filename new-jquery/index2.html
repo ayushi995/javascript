@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>bexal </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.box table tr{
+			border:1px solid red;
+		}
+		</style>
+	</head>
+	<body>
+		<section id="box">
+			<table border="1px solid red">
+				<tr>
+					<td>First Name</td>
+					<td>Last Name</td>
+					<td>Age</td>
+					<td>Mobile</td>
+					<td>Email</td>
+				</tr>
+				<tr>
+					<td>Ayushi</td>
+					<td>Tyagi</td>
+					<td>19</td>
+					<td>8376827560</td>
+					<td>ayushi@gmail.com</td>
+				</tr>
+			</table>
+		</section>
+		<button id="btn">submit</button>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	var data = {
+		First_Name : "Ayushi",
+		Last_Name : "Tyagi",
+		Age : 19,
+		Mobile : 8376827560,
+		Email : "ayushi@gmail.com",
+	};
+	$("#btn").click(function(){
+		var el = document.createElement("div");
+		el.setAttribute("class", "table");
+		console.log(el);
+		
+		var elul = document.createElement("ul");
+		
+		var elli1 = document.createElement("li");
+		elli1.innerHTML = data.First_Name;
+		elul.append(elli1);
+		
+		var elli2 = document.createElement("li");
+		elli2.innerHTML = data.Last_Name;
+		elul.append(elli2);
+		
+		var elli3 = document.createElement("li");
+		elli3.innerHTML = data.Age;
+		elul.append(elli3);
+		
+		var elli4 = document.createElement("li");
+		elli4.innerHTML = data.Mobile;
+		elul.append(elli4);
+		
+		var elli5 = document.createElement("li");
+		elli5.innerHTML = data.Email;
+		elul.append(elli5);
+		
+		el.append(elul);
+		$("#box").append(el);
+	});
+});
+</script>
+	</body>
+</html>		
+						
+							
+						
+	
+				
+				
+
+	
+				
+		
+
+				

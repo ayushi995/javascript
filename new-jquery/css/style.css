@@ -1,0 +1,41 @@
+body{padding:0; margin:0; font-family:arial}
+.cal_main{width:100%;
+		  left:0;
+		  right:0;
+		  margin:auto;
+		  max-width:248px;
+		  margin-top:20px;
+		  background-color:#e3ebf3;
+		  padding:15px 15px;
+		  border:1px solid #6e6b6b;}
+		  
+.cal_div{border:1px solid #929ba4;
+		 width:100%;
+		 max-width:227.9px;
+		 height:61px;
+		 border-radius:2px;
+		 left:0;
+		 right:0;
+		 margin:auto;
+		 background: linear-gradient(0deg, rgba(255,255,255,1) 49%, rgba(231,239,252,1) 66%);
+		 position:relative;}
+
+.cal_div h1{position:absolute;
+			right:0;
+			top:4px}		 
+		 
+.cal_table tr td{border:1px solid #849197;
+				 padding:7px 7px;
+				 color:#2a3c50;
+				 font-size:14px;
+				 font-weight:500;
+				 background: linear-gradient(0deg, rgba(255,255,255,1) 49%, rgba(231,239,252,1) 66%);}
+				 
+.cal_table tr td input{border: 0;
+					   width: 22px;
+	                   background-color:transparent;}				 
+
+.cal_table tr td:hover{background: linear-gradient(0deg, rgba(244,195,122,1) 31%, rgba(255,246,234,1) 58%); border:1px solid #ffca08db}	
+	
+	
+.cal_table tr td button{background-color:transparent; border:none}	
