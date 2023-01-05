@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+
+<section class="calc">
+	<div class="form">
+		<input id="num1" class="field" type="text" placeholder="Enter First number" />
+		<input id="num2" class="field" type="text" placeholder="Enter Second number" />
+		<div class="output">Output<span id="output">-</span></div>
+		
+		<div class="action">
+			<button onclick="add()">+</button>
+			<button onclick="sub()">-</button>
+			<button onclick="mult()">*</button>
+			<button onclick="divid()">/</button>
+		</div>
+	</div>
+</section>
+<script>
+
+function add(){
+	var one = document.getElementById("num1").value;
+	var two = document.getElementById("num2").value;
+	var el = document.getElementById("output");
+	one = parseInt(one);
+	two = parseInt(two);
+	var add = one + two;
+	el.innerHTML = add;
+}
+
+function sub(){
+	var one = document.getElementById("num1").value;
+	var two = document.getElementById("num2").value;
+	var el = document.getElementById("output");
+	one = parseInt(one);
+	two = parseInt(two);
+	var sub = one - two;
+	el.innerHTML = sub;
+}
+
+function mult(){
+	var one = document.getElementById("num1").value;
+	var two = document.getElementById("num2").value;
+	var el = document.getElementById("output");
+	one = parseInt(one);
+	two = parseInt(two);
+	var sub = one * two;
+	el.innerHTML = sub;
+}
+
+function divid(){
+	var one = document.getElementById("num1").value;
+	var two = document.getElementById("num2").value;
+	var el = document.getElementById("output");
+	one = parseInt(one);
+	two = parseInt(two);
+	var sub = one / two;
+	el.innerHTML = sub;
+}
+
+</script>
+</body>
+</html>
