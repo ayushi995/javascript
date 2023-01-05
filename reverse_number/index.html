@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>reverse_number</title>
+	</head>
+<body>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+	var num =4857;
+	var rev =0;
+	var rem ;
+	while(num>1){
+		rem = num % 10;
+		rev = (rev + rem)*10;
+		num = (num - rem)/10;
+	}
+	rev = rev/10;
+	document.write(rev);
+</script>
+</html>
