@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<style>
+			.hide{
+			 display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<button id="show">Show</button>
+			<button id="hide">Hide</button>
+		</div>
+	
+		<div id="togglediv" class="banner">
+			<img src="banner.jpg" width="100%" />
+		</div>
+		
+		
+		
+		
+		
+		
+		<script>
+			var btnshow = document.getElementById("show");
+			var btnhide = document.getElementById("hide");
+			var toggle = document.getElementById("togglediv");
+			btnhide.onclick = function(){
+				toggle.setAttribute("class", "hide");
+			}
+			btnshow.onclick = function(){
+				toggle.setAttribute("class", "banner");
+			}
+			
+		</script>
+	</body>
+</html>
