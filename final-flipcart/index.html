@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>welcome</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<!-- section one -->
+<section class="section-one">
+	<div class="main-div">
+		<div class="flip">
+			<img src="asset/flipcart.png" />
+			<h2>Explore <span class="color">Plus<img src="asset/plus.png"><span></h2>
+		</div>
+		<div class="input">
+			<input type="text"  id="search"  class="search-field" placeholder="Search For Products,brands and more" onkeyup="search(this.value)"  />
+			<span class="search-logo" >
+				<i  class="fas fa-search" onclick="seachclick()" ></i>
+			</span>
+		</div>
+		<div class="button">
+			<button onclick="seachclick()">Login</button>
+		</div>
+		<div class="option">
+			<select class="dropdown">
+				<option>More</option>
+				<option>jeans</option>
+				<option>t-shirts</option>
+			</select>
+		</div>
+		<div class="cart">
+			<i class="fas fa-shopping-cart"></i>
+			<span class="s-cart">Cart<span>
+		</div>
+	</div>
+</section>
+
+	<!-- section two -->
+<section id="slider" class="suit">
+<div class="suit">
+	<div class="item active">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/LA/Sravanthi/MegaSalaryDays_Jan21/Salary-days-Jan-2021-herotator_1500x600._CB412648388_.jpg" />
+	</div>
+	<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/1499/GW/Hero/MSO/ENG/HIN/Updated/Header_1500x600._CB412497578_.jpg" />
+	</div>
+	<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2020/X-site/SingleTitle/Coolie/launch/1500x600_Hero-Tall_np._CB412486893_.jpg" />
+	</div>
+	<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Fashion/EVENT/December20/GWClearance/PC/2._CB414366195_.jpg" />
+	</div>
+		<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Xiaomi/Mi_days/Uber_GW/D18787601_BAU_Xiaomi_Family_DesktopHero_1500x600_2._CB413305591_.jpg" />
+	</div>
+		<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/vivo/December/GW/V19/D19383832_WL_Vivo_BAU_Dec2020_Tall_Hero_1500x600._CB413828217_.jpg" />
+	</div>
+		<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/OHL/JAN2021HSS/Home_1500x600._CB412694266_.jpg" />
+	</div>
+		<div class="item">
+		<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC/April20/Gateway/DesktopHero_HFC_1500x600_Recharge1._CB414105779_.jpg" />
+	</div>
+	<div class="control">
+		<button class="btn-left"><i class="fas fa-chevron-left"></i></button>
+		<button class="btn-right"><i class="fas fa-chevron-right"></i></button>
+	</div>
+</div>	
+</section>
+	<!-- section two -->
+<div class="suit">
+<div id="lists">
+
+</div>
+</div>
+	
+
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script>
+	$(document).ready(function(){
+		$(".btn-right").click(function(){
+			
+			var activeEl = $("#slider").find(".item.active");
+			if(activeEl.next(".item").length > 0){
+				activeEl.fadeOut();
+				activeEl.next(".item").fadeIn();
+				activeEl.next(".item").addClass("active").siblings().removeClass("active");
+			}
+		});
+		
+		
+		$(".btn-left").click(function(){
+			if($("#slider").find(".item.active").prev(".item").length > 0){	
+				$("#slider").find(".item.active").fadeOut();
+				$("#slider").find(".item.active").prev(".item").fadeIn();
+				$("#slider").find(".item.active").prev(".item").addClass("active").siblings().removeClass("active");
+			}
+		});
+	});
+
+</script>`
+<script src="js/flipcart.js">
+
+</script>
+</body>
+</html>
+
