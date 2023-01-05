@@ -1,0 +1,10 @@
+.body{padding:0; margin:0}
+.hero{
+	width:100%;
+	height:100vh;
+	 background-image:url('asset/sky.jpg');
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	overflow-x:hidden;
+}
