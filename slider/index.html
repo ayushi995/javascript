@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to slider</title>
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<section id="slider">
+	<div class="item active">
+		<img src="asset/banner1.png" />
+	</div>
+	<div class="item">
+		<img src="asset/banner2.png" />
+	</div>
+	<div class="item">
+		<img src="asset/banner3.jpg" />
+	</div>
+	<div class="control">
+		<button class="btn-left"><i class="fas fa-chevron-left"></i></button>
+		<button class="btn-right"><i class="fas fa-chevron-right"></i></button>
+	</div>
+</section>
+<div class="dots-control">
+		<div class="dot active"><i class="fas fa-circle"></i></div>
+		<div class="dot"><i class="fas fa-circle"></i></div>
+		<div class="dot"><i class="fas fa-circle"></i></div>
+</div>
+	
+<script src="js/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".btn-right").click(function(){
+			/*
+			if($("#slider").find(".item.active").next(".item").length > 0){
+				$("#slider").find(".item.active").fadeOut();
+				$("#slider").find(".item.active").next(".item").fadeIn();
+				$("#slider").find(".item.active").next(".item").addClass("active").siblings().removeClass("active");
+			} */
+			
+			var activeEl = $("#slider").find(".item.active");
+			if(activeEl.next(".item").length > 0){
+				activeEl.fadeOut();
+				activeEl.next(".item").fadeIn();
+				activeEl.next(".item").addClass("active").siblings().removeClass("active");
+			}
+		});
+		
+		
+		$(".btn-left").click(function(){
+			if($("#slider").find(".item.active").prev(".item").length > 0){	
+				$("#slider").find(".item.active").fadeOut();
+				$("#slider").find(".item.active").prev(".item").fadeIn();
+				$("#slider").find(".item.active").prev(".item").addClass("active").siblings().removeClass("active");
+			}
+		});
+	});
+</script>
+</body>
+</html>
