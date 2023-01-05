@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>reverse_table</title>
+	</head>
+<body>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+	var num=2;
+	for(var i=10; i>=1; i--){
+		var table = num * i;
+		document.write(table + "<br/>");
+	}
+	
+</script>
+</html>
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo">
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+	for(var i= 1; i<=10; i++){
+		var el = document.createElement("li");
+		var tablevalue = 2 * i;
+		el.innerHTML = tablevalue;
+		var mainEL = $("#demo");//$("demo")
+		mainEL.append(el);
+		
+	}
+</script>
+</html>
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo">
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+	<!--- for(var i= 1; i<=10; i++){		
+		var mul = 2 * i;
+		var el = document.getElementById("demo");
+		el.innerHTML = tablevalue;
+		var main = el.innerHTML += mul;
+		console.log(main);
+		
+	-->
+	for(var i=1; i<=10; i++){
+		var mul = 2 * i;
+		var el = $("#table").append(mul);
+		console.log(el);
+	}
+</script>
+</html>
