@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>project</title>
+
+<style>
+	#name li{color:red;}
+</style>
+</head>
+
+<body>
+
+<ul id="name">
+
+</ul>
+
+<img src="https://dii.dubaichamber.com/sites/default/files/city_thumb_image/manufacturing.jpg" />
+
+<button onclick="genratetable(100)">table</button>
+
+
+<script>
+/*
+var d = "hello";
+var arr = [];
+console.log(arr);
+for(var i=d.length-1; i>=0; i--){
+	arr.push(d[i]);
+}
+console.log(arr.join(""));
+document.getElementById("name").innerHTML = d;
+*/
+
+function genratetable(n){
+	createtable(n);
+}
+
+function createtable(p){	
+	for(var i=1; i<=10; i++){
+		var gtable = p * i;
+		var t_li = document.createElement("li");
+		t_li.innerHTML = gtable;
+		console.log(t_li);
+		document.getElementById("name").appendChild(t_li);
+	}
+}
+
+
+var d = [
+{
+	image: "https://dii.dubaichamber.com/sites/default/files/city_thumb_image/manufacturing.jpg",
+	title: "hello india",
+	desc: "sdfsfd sdfsdf sadfs dfs fdsf sadf",
+},
+{
+	image: "https://dii.dubaichamber.com/sites/default/files/city_thumb_image/wholesale-retail.jpg",
+	title: "hello india",
+	desc: "sdfsfd sdfsdf sadfs dfs fdsf sadf",
+}
+]
+
+
+
+</script>
+</body>
+</html>

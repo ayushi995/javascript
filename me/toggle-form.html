@@ -1,0 +1,114 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" />
+<title>welcome</title>
+
+	<style>
+			.hide{
+			 display:none;
+			}
+		</style>
+</head>
+<body>
+
+
+<section id="togglediv" class="mainsection">
+
+
+<section class="ist">
+<div class="maindiv">
+	<div class="heading">
+	<h1>Create An Account</h1>
+	<p>Welcome! Register for an account</p>
+	</div>
+</div>
+</section>
+
+<section class="sectionthree">
+	<div class="mainthreediv">
+		<h2 class="h2">Your username</h2>
+	</div>
+	
+	<div>
+		<input id="num1" class="field" type="text" placeholder="" />
+		<hr class="hr"></hr>
+	</div>
+</section>
+
+
+
+<section class="sectionthree">
+	<div class="mainthreediv">
+		<h2 class="h2">Your email</h2>
+	</div>
+	
+	<div>
+		<input id="num1" class="field" type="text" placeholder="" />
+		<hr class="hr"></hr>
+	</div>
+</section>
+
+
+
+<section class="sectionthree">
+	<div class="mainthreediv">
+		<h2 class="h2">Password</h2>
+	</div>
+	
+	<div>
+		<input id="num1" class="field" type="text" placeholder="" />
+		<hr class="hr"></hr>
+	</div>
+</section>
+
+
+
+<section class="sectionthree">
+	<div class="maintwodiv">
+		<h2 class="h2">Confirm Pasword</h2>
+	</div>
+	
+	<div>
+		<input id="num1" class="field" type="text" placeholder="" />
+		<hr class="hr"></hr>
+	</div>
+</section>
+<div class="button">
+    <button class="thirdbutton">Register</button>	
+</div>
+
+<div class="secondsection">
+<div class="last">
+
+<h2 class="lasth2">
+Already a member
+</h2>
+<button class="lastbutton">sign in</button>
+</div>
+</div>
+</section>
+
+
+<div class="fixed">
+			<button id="show" class="show1">Show</button>
+			<button id="hide" class="hide1">Hide</button>
+		</div>
+	
+
+<script>
+			var btnshow = document.getElementById("show");
+			var btnhide = document.getElementById("hide");
+			var toggle = document.getElementById("togglediv");
+			btnhide.onclick = function(){
+				toggle.setAttribute("class", "hide");
+			}
+			btnshow.onclick = function(){
+				toggle.setAttribute("class", "banner");
+			}
+			
+</script>
+
+
+
+</body>
+</html>

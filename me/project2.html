@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>project</title>
+<script>
+var a = {
+	amount : 200,
+	sellingprice : 250,
+	profit : 100,
+	discount : 50,
+	salary : function(){
+	 return this.amount + this.profit - this.discount;
+	}	
+}
+
+a.salary()
+
+console.log(a);
+document.write(a.salary());
+</script>
+
+<body></body>
+</html>

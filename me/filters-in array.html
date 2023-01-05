@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" />
+<title>welcome</title>
+<style>
+	#lists{display:flex; flex-wrap:wrap; background-color:#eee;}
+	.box{width:25%; padding: 10px;box-sizing: border-box; margin-bottom:20px;}
+	.box:hover{background-color:#ccc; cursor:pointer;}
+	.title{font-size:20px; margin-bottom:15px;}
+	.hide{display:none !important;}
+	#profile{padding:15px 0;}
+	#profile .p_filter{display:inline-block; padding:7px 12px; background-color:#ccc; margin-right:10px; border-radius:20px;}
+</style>
+</head>
+<body>
+
+<select id="dropdown" onchange="filterBycountry(this.value)">
+
+</select>
+
+<div id="profile">
+
+</div>
+
+<div id="lists">
+
+</div>
+
+<script src="js/index3.js"></script>
+</body>
+</html>

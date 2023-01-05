@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>welcome</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style2.css" />
+</head>
+<body>
+<section class="section-one">
+	<h1 class="one-h1">Register New Account</h1>
+	<div class="form">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="First Name" id="firstname">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Last Name" id="lastname">
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="name">
+	<div class="row">
+		<div class="col-sm-12">
+			<input type="text" class="form-control" placeholder="Class" id="class">
+		</div>
+	</div>
+</div>
+<div class="city">	
+		<div class="row">
+		<div class="col-sm-12">
+			<input type="text" class="form-control" placeholder="Father's Name" id="fathername">
+		</div>
+	</div>
+</div>	
+<div class="phone">
+		<div class="row">
+		<div class="col-sm-12">
+			<input type="text" class="form-control" placeholder="Phone Number" id="phonenumber">
+		</div>
+	</div>
+</div>
+<div class="email">	
+		<div class="row">
+		<div class="col-sm-12">
+			<input type="text" class="form-control" placeholder="Email" id="email">
+		</div>
+	</div>
+</div>
+<div class="formbutton">
+	<div class="col-sm-12">
+		<button type="submit" id="register" class="btn btn-primary">Create Account</button>
+	</div>
+</div>				
+	</div>
+</section>
+
+<div class="showdiv">
+hello india sadgsd sdfs
+
+</div>
+
+<button id="open">Hide</button>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#open").click(function(){
+			var inner = $(".showdiv").prepend("<p>hiiiiii</p>");
+			$(".showdiv").addClass("myclass");
+			
+			
+			$(".showdiv").animate({
+				bottom: "200px",
+				right: "200px"
+			}, 100);
+		});
+		
+	});
+</script>
+</body>
+</html>
