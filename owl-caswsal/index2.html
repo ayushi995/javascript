@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>welcome</title>
+<link rel="stylesheet" href="css/owl.carousel.min.css" />
+<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="slider" class="owl-carousel owl-theme">
+    <div class="item">
+		<div class="box-design color1">
+			<div class="box-img"><img src="asset/banner1.png" /></div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color2">
+			<div class="box-img"><img src="asset/banner2.png" /></div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color3">
+			<div class="box-img"><img src="asset/banner3.jpg" /></div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	$("#slider").owlCarousel({
+		items:1,
+		loop:true,
+		autoplay:true,
+		margin:15,
+		nav:false,
+		dots:true
+	});
+});
+</script>
+</body>
+</html>

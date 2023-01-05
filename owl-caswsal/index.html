@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>welcome</title>
+<link rel="stylesheet" href="css/owl.carousel.min.css" />
+<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="slider" class="owl-carousel owl-theme">
+    <div class="item">
+		<div class="box-design color1">
+			<div class="box-img"><img src="asset/1.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color2">
+			<div class="box-img"><img src="asset/2.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color3">
+			<div class="box-img"><img src="asset/3.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color4">
+			<div class="box-img"><img src="asset/4.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color1">
+			<div class="box-img"><img src="asset/5.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+    <div class="item">
+		<div class="box-design color1">
+			<div class="box-img"><img src="asset/6.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="box-design color1">
+			<div class="box-img"><img src="asset/7.png" /></div>
+			<div class="box-txt">
+				<h3>Take Control</h3>
+				<p>Touch enabled jQuery plugin that lets you create beautiful responsive</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	$("#slider").owlCarousel({
+    loop:true,
+	autoplay:true,
+    margin:15,
+    nav:false,
+	dots:true,
+	mouseDrag:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+	});
+});
+</script>
+</body>
+</html>
